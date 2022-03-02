@@ -1,0 +1,28 @@
+body {
+    background-color: #0e0e0e;
+}
+
+h1 {
+    color: white;
+    font-family: product sans;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-family: product sans;
+}
+
+div {
+    text-align: center;
+}
+
+a:link, a:active, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: aqua;
+    text-decoration: underline;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tudo Sobre o Google Glass</title>
+    <link rel="stylesheet" href="_css/estilo.css">
+    <link rel="stylesheet" href="_css/specs.css">
+    <script src="_javascript/funcoes.js"></script>
+</head>
+<body>
+    <div id="interface">
+            <nav id="menu"> <!--menu de navegação-->
+                <h1>Menu Principal</h1>
+                <ul>
+                    <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="index.html">Home</a></li>
+                    <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="specs.html">Especificações</a></li>
+                    <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="fotos.html">Fotos</a></li>
+                    <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="multimidia.html">Multimídia</a></li>
+                    <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+                </ul>
+            </nav>
+            
+            <header id="cabecalho"> <!--cabeçalho principal (lateral esquerda)-->
+                <h1>Google Glass</h1>
+                <h2>A revolução do Google está chegando</h2>
+
+                <img id="oculos" src="_imagens/especificacoes.png" alt="Imagem do Google Gass">
+            </header>
+
+        <section id="corpo-full">
+            <article id="noticia">
+                <header id="cabecalho02"> <!--cabeçalho secundário-->
+                    <h3>Glass > Especificações</h3>
+                    <h1>Raio-X no Google Glass</h1>
+                    <h2>por Lucas Gomes</h2>
+                    <h3 class="data">Atualizado em 01/Maio/2013</h3>
+                </header>
+            </article>
+        
+            <p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+            
+            <section id="conteudo">
+                
+                <img src="_imagens/glass-esquema-marcado.jpg" alt="Esquema das partes do Google Glass" usemap="#mapa_glass">
+                <map name="mapa_glass"> <!--configurações dos mapas da imagem esquematizada do Google Glass-->
+                    <area shape="rect" coords="180, 200, 270, 260" href="google-glass.html#tela" target="iframe">
+                    
+                    <area shape="circle" coords="160, 245, 12" href="google-glass.html#camera" target="iframe">
+
+                    <area shape="circle" coords="75, 50, 12" href="google-glass.html#bateria_gadgets" target="iframe">
+
+                    <area shape="poly" coords="30, 145, 85, 220, 85, 250, 30, 170" href="google-glass.html#sensores" target="iframe">
+                </map>
+
+                <!--imagem de indicação ao lado da imagem esquematizada do Google Glass-->
+                <iframe src="google-glass.html" frameborder="0" name="iframe" id="frame-specs" scrolling="no"></iframe>
+            </section>
+        </section>
+
+        <footer id="rodape"> <!--seção de rodapé-->
+            <p>Copyright 2013 - by Lucas Gomes</p>
+            <p><a href="https://github.com/lucas-glopes" target="_blank" rel="noopener noreferrer">GitHub</a> | <a href="https://codepen.io/lucas-glopes" target="_blank" rel="noopener noreferrer">Codepen</a></p>
+        </footer>
+    </div>
+</body>
+</html>

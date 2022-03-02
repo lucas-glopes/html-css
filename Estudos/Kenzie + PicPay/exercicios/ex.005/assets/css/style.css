@@ -1,0 +1,56 @@
+.container {
+    /* tamanho */
+    width: 100vw;
+    height: 100vh;
+
+    /* display */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.container > div {
+    /* tamanho */
+    width: 200px;
+    height: 100px;
+
+    /* display */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* texto */
+    color: white;
+
+    /* fonte */
+    font-size: large;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.cor1 {
+    /* fundo */
+    background-color: #65e1cf;
+}
+
+.cor2 {
+    /* fundo */
+    background-color: #ed5781;
+}
+
+.cor3 {
+    /* fundo */
+    background-color: #79e97d;
+}
+
+.cor4{
+    /* fundo */
+    background-color: #dceec8;
+}
+
+.cor5 {
+    /* fundo */
+    background-color: #f58f2d;
+}

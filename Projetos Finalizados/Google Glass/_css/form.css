@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+/*formatação geral da formulário*/
+form {
+    width: 500px;
+    margin: auto;
+}
+
+/*formatação dos inputs*/
+input, textarea {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 12.5pt;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+input:hover, textarea:hover {
+    background-color: #dddddd;
+}
+
+/*formatação das legendas*/
+legend {
+    color: #888888;
+    font-weight: bold;
+    font-size: 12.5pt;
+    font-family: sans-serif ;
+}
+
+/*formatação dos fieldsets*/
+
+/*usuário*/
+fieldset {
+    border-color: #cecece;
+    margin: 20px;
+}
+
+/*gênero*/
+fieldset#genero {
+    width: 150px;
+}
+/*formatações específicas dos fieldsets*/
+fieldset#usuario {
+    background: url('../_imagens/icone-contato.png') no-repeat 95% 95%;
+}
+
+/*endereço*/
+fieldset#endereco {
+    background: url('../_imagens/icone-endereco.png') no-repeat 95% 95%;
+}
+
+/*mensagem*/
+fieldset#mensagem {
+    background: url('../_imagens/icone-mensagem.png') no-repeat 95% 95%;
+}
+
+fieldset#mensagem textarea#mensagem {
+    margin-left: 32.5px;
+    margin-top: 10px;
+}
+
+
+fieldset#compra {
+    background: url('../_imagens/icone-pagamento.png') no-repeat 95% 95%;
+}

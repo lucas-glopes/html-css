@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tudo Sobre o Google Glass</title>
+    <link rel="stylesheet" href="_css/estilo.css">
+    <link rel="stylesheet" href="_css/form.css">
+    <script src="_javascript/funcoes.js"></script>
+</head>
+<body>
+    <div id="interface">
+        <nav id="menu"> <!--menu de navegação-->
+            <h1>Menu Principal</h1>
+            <ul>
+                <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="index.html">Home</a></li>
+                <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="specs.html">Especificações</a></li>
+                <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="fotos.html">Fotos</a></li>
+                <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="multimidia.html">Multimídia</a></li>
+                <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+            </ul>
+        </nav>
+        
+        <header id="cabecalho"> <!--cabeçalho principal (lateral esquerda)-->
+            <h1>Google Glass</h1>
+            <h2>A revolução do Google está chegando</h2>
+
+            <img id="oculos" src="_imagens/contato.png" alt="Imagem do Google Gass">
+        </header>
+
+        <article id="noticia">
+            <header id="cabecalho02"> <!--cabeçalho secundário-->
+                <h3>Fale Conosco > Contato</h3>
+                <h1>Formulário de Contato</h1>
+                <h2>por Lucas Gomes</h2>
+                <h3 class="data">Atualizado em 01/Maio/2013</h3>
+            </header>
+        </article>
+
+        <form action="mailto:lucas.glopes3.0@gmail.com" method="POST" id="contato" oninput="calculo()"><!--campos de input para as informações referenciadas-->
+            
+            <fieldset id="usuario"> 
+                <!--campo 01 (input do usuário)-->
+                <legend>Identificação do Usuário</legend>
+                    <p>
+                        <label for="nome">Nome:</label> 
+                        <input type="text" name="name" id="nome" size="30" maxlength="30" placeholder="Nome Completo">
+                    </p>
+                    
+                    <p>
+                        <label for="senha">Senha:</label>
+                        <input type="password" name="password" id="senha" size="30" maxlength="8" placeholder="8 Dígitos">
+                    </p>
+                    
+                    <p>
+                        <label for="email">E-mail:</label> 
+                        <input type="email" name="mail" id="email" size="30" maxlength="30">
+                    </p>
+                    
+                    <fieldset id="genero">
+                        <legend>Sexo:</legend>
+                            <input type="radio" name="genero" id="masc"> 
+                            <label for="masc">Masculino</label>
+                            
+                            <br>
+                            
+                            <input type="radio" name="genero" id="fem"> 
+                            <label for="fem">Feminino</label>
+                    </fieldset>
+                    <p><label for="data">Data de Nascimento:</label>
+                        <input type="date" name="date" id="data" >
+                    </p>
+            </fieldset>
+            
+            <fieldset id="endereco">
+                <!--campo 02 (input do endereço)-->
+                <legend>Endereço do Usuário</legend>
+                    <p>
+                        <label for="lugar">Logradouro:</label>
+                        <input type="text" name="place" id="lugar" size="30" maxlength="50" placeholder="Rua, Avenida, Escadaria etc.">
+                    </p>
+                    
+                    <p>
+                        <label for="numero">Número:</label>
+                        <input type="number" name="number" id="numero"min="0" max="9999">
+                    </p>
+                    
+                    <p>
+                        <label for="estado">Estado:</label>
+                        <select name="state" id="estado">
+                            <!--lista dos estados do Brasil-->
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                            <option value="DF">Distrito Federal</option>
+                        </select>
+                    </p>
+                    
+                    <p>
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" name="city" id="cidade" size="30" maxlength="30" placeholder="Sua Cidade" list="cidades">
+                    </p>
+            </fieldset>
+            
+            <fieldset id="mensagem">
+                <!--campo 03 (input da mensagem)-->
+                <legend>Mensagem do Usuário</legend>
+                    <p>
+                        <label for="urgencia">Grau de Urgência:</label>
+                        Mín 
+                        <input type="range" name="urgency" name="urgencia" min="0" max="10" step="2">
+                        Máx
+                    </p>
+                    
+                    <p>
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea name="msg" id="mensagem" cols="40" rows="7" placeholder="Deixa Aqui sua Mensagem" ></textarea>
+                    </p>
+            </fieldset>
+            
+            <fieldset id="compra">
+                <!--campo 04 (input da compra/pedido)-->
+                <legend>Quero um Google Glass</legend>
+                    <p>
+                        <input type="checkbox" name="order" id="pedido">
+                        <label for="pedido">Gostaria de adquirir um Google Glass quando disponível</label>
+                    </p>
+                    
+                    <p>
+                        <label for="cor">Cor:</label>
+                        <input type="color" name="color" id="cor" value="#0000ff">
+                    </p>
+                    
+                    <p>
+                        <label for="quantidade">Quantidade:</label>
+                        <input type="number" name="quantity" id="quantidade" min="1" max="5" value="1">
+                    </p>
+                    
+                    <label for="preco">Preço Total: R$</label>
+                    <input type="text" name="price" id="preco" placeholder="1500,00" readonly>
+            </fieldset>
+            
+            <input type="image" src="_imagens/botao-enviar.png" name="enviar">
+        </form>
+
+        <footer id="rodape"> <!--seção de rodapé-->
+            <p>Copyright 2013 - by Lucas Gomes</p>
+            <p><a href="https://github.com/lucas-glopes" target="_blank" rel="noopener noreferrer">GitHub</a> | <a href="https://codepen.io/lucas-glopes" target="_blank" rel="noopener noreferrer">Codepen</a></p>
+        </footer>
+    </div>
+</body>
+</html>

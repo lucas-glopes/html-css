@@ -1,0 +1,71 @@
+body {
+    /* fonte */
+    font-family: 'Courier New', Courier, monospace;
+
+    /* fundo */
+    background-color: lightgray;
+}
+
+.menu {
+    /* fundo */
+    background-color: #6ABED2;
+    background-image: linear-gradient(to right,#5faabd, #71cbe2);
+
+    /* display */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    /* texto */
+    color: white;
+
+    /* tamanho */
+    width: 100%;
+    height: 90px;
+}
+
+.menu > h1 {
+    /* fonte */
+    font-size: 1.8em;
+    font-weight: bold;
+
+    /* padding */
+    padding: 0px 75px;
+}
+
+.lista_opcoes {
+    /* display */
+    display: flex;
+
+    /* fonte */
+    font-size: .9em;
+
+    /* margem */
+    margin-right: 50px;
+
+}
+
+.lista_opcoes > li {
+    /* padding */
+    padding: 0 20px;
+}
+
+.lista_opcoes > li > a {
+    /* texto */
+    color: white;
+    text-decoration: none;
+
+    /* borda */
+    border-bottom: 0 solid transparent;
+
+    transition: border-bottom .2s ease-in-out;
+}
+
+.lista_opcoes > li > a:hover {
+    /* texto */
+    color: white;
+    
+   /* borda */
+   border-bottom: 1px solid white;
+}

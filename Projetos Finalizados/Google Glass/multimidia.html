@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tudo Sobre o Google Glass</title>
+    <link rel="stylesheet" href="_css/estilo.css">
+    <link rel="stylesheet" href="_css/media.css">
+    <script src="_javascript/funcoes.js"></script>
+</head>
+<body>
+    <div id="interface">
+        <nav id="menu"> <!--menu de navegação-->
+            <h1>Menu Principal</h1>
+            <ul>
+                <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="index.html">Home</a></li>
+                <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="specs.html">Especificações</a></li>
+                <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="fotos.html">Fotos</a></li>
+                <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="multimidia.html">Multimídia</a></li>
+                <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+            </ul>
+        </nav>
+        
+        <header id="cabecalho"> <!--cabeçalho principal (lateral esquerda)-->
+            <h1>Google Glass</h1>
+            <h2>A revolução do Google está chegando</h2>
+
+            <img id="oculos" src="_imagens/multimidia.png" alt="Imagem do Google Gass">
+        </header>
+
+        <article id="noticia">
+            <header id="cabecalho02"> <!--cabeçalho secundário-->
+                <h3>Glass > Multimídia</h3>
+                <h1>Sons e Vídeos</h1>
+                <h2>por Lucas Gomes</h2>
+                <h3 class="data">Atualizado em 01/Maio/2013</h3>
+            </header>
+        </article>
+
+        <div id="tv_radio">
+            <!--configurações do vídeo-->
+            <video id="video" src="_media/getting-started.mp4" controls poster="_imagens/video-mini03.jpg">
+                <p>Desculpe, seu navegador não suporta players de vídeo</p>
+            </video>
+
+            <!--configurações do aúdio-->
+            <audio id="audio" src="_media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg" controls>
+                <p>Desculpe, seu navegador não suporta players de áudio</p>
+            </audio>
+        </div>
+
+        <footer id="rodape"> <!--seção de rodapé-->
+            <p>Copyright 2013 - by Lucas Gomes</p>
+            <p><a href="https://github.com/lucas-glopes" target="_blank" rel="noopener noreferrer">GitHub</a> | <a href="https://codepen.io/lucas-glopes" target="_blank" rel="noopener noreferrer">Codepen</a></p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(230, 240, 250, .7)
+}
+
+
+.cabecalho_landscape {
+    /* display */
+    display: none;
+}
+
+
+.cabecalho {
+    /* texto */
+    color: white;
+    text-align: center;
+
+    /* fundo */
+    background-color: black;
+}
+
+.cabecalho > h1 {
+    /* fonte */
+    font-size: 1.8em;
+    font-weight: bold;
+    
+    /* padding */
+    padding: 25px 0;
+}
+
+.cabecalho > img {
+    /* tamanho */
+    width: 100%;
+    max-width: 250px;
+
+    /* borda */
+    border-radius: 50%;
+    border: 3px solid white;
+
+    /* padding */
+    padding: 3px;
+}
+
+.cabecalho .destaque {
+    /* fonte */
+    font-size: 1.7em;
+
+    /* padding */
+    padding: 15px 0;
+
+    /* display */
+    display: block;
+
+    /* tamanho */
+    width: 300px;
+
+    /* borda */
+    border-bottom: 2px solid rgba(255, 255, 255, .5);
+
+    /* margem */
+    margin: auto;
+}
+
+.cabecalho .enfase {
+    /* fonte */
+    font-size: 1em;
+    font-style: italic;
+    /* font-weight: bold; */
+
+    /* padding */
+    padding: 15px 0 30px 0;
+}
+
+
+.conteudo_principal {
+    /* fundo */
+    background-color: white;
+
+    /* tamanho */
+    max-width: 750px;
+
+    /* margem */
+    margin: auto;
+
+    /* padding */
+    padding: 30px 60px;
+
+    /* sombra */
+    box-shadow: 2.5px 0px 20px rgba(0, 0, 0, .2);
+}
+
+@media screen and (min-width: 1050px) {
+    .conteudo_principal {
+        /* tamanho */
+        max-width: 1050px;
+    }
+}
+
+.conteudo_principal strong {
+    /* fonte */
+    font-weight: bold;
+}
+
+.conteudo_principal em {
+    /* fonte */
+    font-style: italic;
+}
+
+
+.secao_principal {
+    /* margem */
+    margin-bottom: 50px;
+}
+
+.secao_principal > h2 {
+    /* fonte */
+    font-size: 2em;
+    font-weight: bold;
+
+    /* margem */
+    margin-bottom: 25px;
+}
+
+.secao_principal > p {
+    /* linha */
+    line-height: 30px;
+
+    /* margem */
+    margin-bottom: 30px;
+}
+
+.secao_principal > ul {
+    /* marcador da lista */
+    list-style-type: disc;
+
+    /* margem */
+    margin: -10px 0 30px 20px;
+
+    /* linha */
+    line-height: 30px;
+}
+
+
+.rodape {
+    /* fundo */
+    background-color: black;
+
+    /* texto */
+    color: white;
+    text-align: center;
+
+    /* padding */
+    padding: 7px 0;
+
+    /* fonte */
+    font-size: .9em;
+}

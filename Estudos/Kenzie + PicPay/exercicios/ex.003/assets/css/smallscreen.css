@@ -1,0 +1,225 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(230, 240, 250, .7)
+}
+
+
+.cabecalho_landscape {
+    /* display */
+    display: none;
+}
+
+
+.cabecalho {
+    /* fundo */
+    background-color: black;
+
+    /* texto */
+    color: white;
+    text-align: center;
+}
+
+.cabecalho > h1 {
+    /* fonte */
+    font-size: 1.5em;
+    font-weight: bold;
+
+    /* padding */
+    padding: 20px 0;
+}
+
+.cabecalho > img {
+    /* tamanho */
+    width: 100%;
+    max-width: 200px;
+
+    /* borda */
+    border-radius: 50%;
+    border: 2px solid white;
+
+    /* padding */
+    padding: 3px;
+}
+
+.cabecalho .destaque {
+    /* fonte */
+    font-size: 1.3em;
+
+    /* padding */
+    padding: 12.5px 0;
+
+    /* borda */
+    border-bottom: 2px solid rgba(255, 255, 255, .5);
+
+    /* display */
+    display: block;
+
+    /* tamanho */
+    width: 230px;
+
+    /* margem */
+    margin: auto;
+}
+
+.cabecalho .enfase {
+    /* padding */
+    padding: 10px 0 20px 0;
+
+    /* fonte */
+    font-size: .8em;
+    font-style: italic;
+}
+
+/* tela pequena landscape */
+@media screen and (orientation: landscape) {
+    .cabecalho {
+        /* display */
+        display: none;
+    }
+
+    .cabecalho_landscape {
+        /* display */
+        display: flex;
+
+        /* alinhamento */
+        align-items: center;
+        justify-content: center;
+
+        /* fundo */
+        background-color: black;
+
+        /* texto */
+        color: white;
+
+        /* padding */
+        padding: 20px 0;
+    }
+
+    .cabecalho_landscape > img {
+        /* tamanho */
+        width: 100%;
+        max-width: 130px;
+
+        /* borda */
+        border-radius: 50%;
+        border: 2px solid white;
+
+        /* padding */
+        padding: 2px;
+    }
+
+    .infos {
+        /* padding */
+        padding-left: 20px;
+    }
+
+    .infos > h1 {
+        /* fonte */
+        font-size: 1.5em;
+        font-weight: bold;
+
+        /* margem */
+        margin-bottom: 30px;
+    }
+
+    .infos .destaque {
+        /* fonte */
+        font-size: 1.1em;
+
+        /* padding */
+        padding-bottom: 10px;
+
+        /* borda */
+        border-bottom: 2px solid rgba(255, 255, 255, .5);
+    }
+
+    .infos .enfase {
+        /* fonte */
+        font-size: .8em;
+        font-style: italic;
+
+        /* padding */
+        padding-top: 10px;
+    }
+}
+
+
+.conteudo_principal {
+    /* padding */
+    padding: 20px 30px;
+
+    /* fundo */
+    background-color: white;
+}
+
+.conteudo_principal strong {
+    /* fonte */
+    font-weight: bold;
+}
+
+.conteudo_principal em {
+    /* fonte */
+    font-style: italic;
+}
+
+
+.secao_principal {
+    /* margem */
+    margin-bottom: 45px;
+}
+
+.secao_principal > h2 {
+    /* fonte */
+    font-size: 1.5em;
+    font-weight: bold;
+
+    /* margem */
+    margin-bottom: 20px;
+}
+
+.secao_principal > p {
+    /* linha */
+    line-height: 27.5px;
+
+    /* margem */
+    margin-bottom: 25px;
+
+    font-size: .9em;
+
+    /* texto */
+    text-align: justify;
+}
+
+.secao_principal > ul {
+    /* marcador da lista */
+    list-style-type: disc;
+
+    /* margem */
+    margin: 20px 0 20px 20px;
+
+    /* linha */
+    line-height: 35px;
+}
+
+.rodape {
+    /* fundo */
+    background-color: black;
+
+    /* texto */
+    color: white;
+    text-align: center;
+
+    /* padding */
+    padding: 7px 0;
+
+    /* fonte */
+    font-size: .8em;
+}

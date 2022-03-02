@@ -1,0 +1,108 @@
+/* configuracoes das fontes */
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+/* importacao das fontes "Passion One" e "Sriracha" */
+/* 
+    Regras CSS para usar elas:
+
+    font-family: 'Passion One', cursive;
+    font-family: 'Sriracha', cursive;
+*/
+
+/* gerais */
+:root {
+    --fontes_padrao: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte_especial_01: 'Passion One', cursive;
+    --fonte_especial_02: 'Sriracha', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: black;
+    font-family: var(--fontes_padrao);
+}
+
+/* cabecalho */
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+header > h1 {
+    /* text-transform: uppercase; */
+    font-variant: small-caps;
+    font-family: var(--fonte_especial_01);
+    font-size: 10vw; 
+}
+
+/* links */
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+/* sessoes em geral */
+section {
+    padding: 10vh 0;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte_especial_02);
+    font-size: 3.2vw;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+/* secoes normais */
+.sessao_normal {
+    background-color: white;
+    color: black;
+}
+
+/* sessoes com imagem */
+.sessao_imagem {
+    background-color: rgb(78, 78, 78);
+    color: white;
+    background-size: cover;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, .7);
+    background-attachment: fixed;
+}
+
+#sessao_imagem_01 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+}
+
+#sessao_imagem_02 {
+    background-image: url(../imagens/background002.jpg);
+}
+
+.sessao_imagem > p {
+    background-color: rgba(0, 0, 0, 0.8);
+    display: inline-block;
+    padding: 10px;
+    text-shadow: 2px 2px 1px black;
+}
+
+/* rodape */
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}

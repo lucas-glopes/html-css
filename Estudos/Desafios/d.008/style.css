@@ -1,0 +1,21 @@
+/* geral */
+body {
+    font-family: sans-serif;
+}
+
+/* pagina index */
+#index_page {
+    background-color: rgb(210, 210, 210);
+}
+
+/* pagina verde */
+#green_page {
+    background-color: lightgreen;
+    color: rgb(0, 100, 0);
+}
+
+/* pagina amarela */
+#yellow_page {
+    background-color: lightyellow;
+    color: rgb(209, 153, 81);
+}

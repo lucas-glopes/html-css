@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em HTML5</title>
+</head>
+<body>
+    <h1>Vídeo Hospedado Localmente</h1>
+    <p>Este vídeo está hospedado em meu próprio servidor:</p>
+    <video width="560" poster="thumb/thumb_1000.png" controls>
+        <source src="midias/drone_nas_montanhas_720p_mp4.m4v" type="video/mp4">
+        <source src="midias/drone_nas_montanhas_720p_webm.mkv" type="video/webm">
+        <p>Seu navegador não possui compatibilidade com a reprodução de vídeos.</p>
+    </video>
+    <!--Também dá para fazer da forma simples utilizando apenas um source, mas o método mais completo garante mais compatibilidade-->
+    <h1>Vídeo do YouTube</h1>
+    <p>O vídeo a seguir foi retirado do YouTube:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/eF9Qoc6p_4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h1>Vídeo do Vimeo</h1>
+    <p>A seguir temos um vídeo retirado do Vimeo:</p>
+    <iframe src="https://player.vimeo.com/video/197093965?title=0&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

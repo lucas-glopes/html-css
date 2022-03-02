@@ -1,0 +1,283 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'ProductSans_regular';
+    src: url("../_fonts/google_sans/ProductSans-Regular.ttf");
+}
+@font-face {
+    font-family: 'ProductSans_light';
+    src: url("../_fonts/google_sans/ProductSans-Light.ttf");
+}
+
+/*formatação do corpo*/
+body {
+    background-color: #dddddd;
+    font-family: 'ProductSans_light', sans-serif;
+}
+
+div#interface {
+    width: 900px;
+    background-color: white;
+    margin: -20px auto 0px auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+/*formatação dos parágrafos*/
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+/*formatação dos links*/
+a {
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+/*formatação do cabeçalho*/
+header#cabecalho img#oculos {
+    position: relative;
+    left: 740px;
+    top: -30px;
+}
+
+header#cabecalho {
+    border-bottom: 1.5px #606060 solid;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+
+}
+
+header#cabecalho h1 {
+    font-family: 'ProductSans_regular', sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    padding: 0px;
+    margin-bottom: 3px;
+}
+
+header#cabecalho h2 {
+    font-family: 'ProductSans_light', sans-serif;
+    font-size: 15pt;
+    color: #888888;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+/*formatação das imgs com legenda*/
+figure.foto_legenda {
+    border: 8px solid rgb(245, 245, 245);
+    box-shadow: 2px 2px 3px black;
+    position: relative;
+}
+
+figure.foto_legenda img {
+    width: 100%;
+    height: 100%;
+}
+
+figure.foto_legenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: black;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 0.3s;
+}
+
+figure.foto_legenda:hover figcaption {
+    opacity: 1;
+}
+
+figure.foto_legenda h3 {
+    background-color: #cecece;
+    padding: 5px;
+    margin-top: 0px;
+    font-family: 'ProductSans_regular', sans-serif;
+    margin-bottom: 5px;
+}
+
+figure.foto_legenda p {
+    color: white;
+    text-indent: 5px;
+    margin-top: 0px;
+    font-size: 13pt;
+}
+
+/*fomatação do menu*/
+nav#menu {
+    display: block;
+}
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: relative;
+    top: -7px;
+    left: 320px;
+    margin-bottom: -40px;
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu li {
+    display: inline-block;
+}
+
+nav#menu a {
+    color: black;
+    text-decoration: none;
+    background-color: #dddddd;
+    padding: 10px;
+    transition: color 0.2s;
+    transition: background-color 0.2s;
+}
+
+nav#menu a:hover {
+    color: white;
+    background-color: #606060;
+}
+
+/*formatação da seção do corpo*/
+section#corpo {
+    display: block;
+    width: 500px;
+    float: left;
+    border-right: 1.5px solid #606060;
+    padding-right: 15px;
+}
+
+section#corpo article#noticia video#video_01 {
+    width: 500px;
+    margin: 3px;
+    margin-bottom: 17.5px;
+}
+
+/*formatação geral da seção de artigo*/
+article#noticia h2 {
+    font-size: 12.5pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+/*formatação do cabeçalho secundário*/
+header#cabecalho02 h1 {
+    font-family: 'ProductSans_regular', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+header#cabecalho02 h2 {
+    font-size: 12.5pt;
+    color: #cecece;
+    background-color: white;
+    margin-top: -2.5px;
+    margin-left: -7.5px;
+}
+
+header#cabecalho02 h3 {
+    font-size: 12.5px;
+    color: #606060;
+}
+
+.data {
+    text-align: right;
+}
+
+/*formatação da tabela*/
+table#tabela_specs {
+    border: 1.5px solid #606060;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#tabela_specs td {
+    border: 1.5px solid black;
+    padding: 10px;
+    text-align: left;
+    background-color: #dddddd;
+
+}
+
+table#tabela_specs td.coluna_esq {
+    text-align: center;
+    background-color: #606060;
+    color: white;
+    font-weight: bold;
+}
+
+table#tabela_specs caption {
+    color: #888888;
+    font-size: 12.5pt;
+    font-weight: bolder;
+}
+
+table#tabela_specs caption span {
+    display: block;
+    float: right;
+    color: black;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+
+/*formatação da barra lateral*/
+aside#lateral {
+    display: block;
+    width: 350px;
+    float: right;
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 15px;
+    margin-right: 3px;
+    box-shadow: 2px 2px 2px black;
+}
+
+aside#lateral h1 {
+    font-family: 'ProductSans_regular', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+aside#lateral h2 {
+    background-color: #606060;
+    font-size: 12.5pt;
+    color: white;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+aside#lateral video#video_02 {
+    width: 350px;
+    margin-top: 0px;
+}
+
+/*fomatação do redapé*/
+footer#rodape {
+    clear: both;
+    border-top: 1.5px solid #606060;
+}
+
+footer#rodape p {
+    text-align: center;
+    line-height: 10px;
+}
