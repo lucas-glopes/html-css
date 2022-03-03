@@ -8,9 +8,12 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: rgba(230, 240, 250, .7)
+    background-color: black;
 }
 
+article {
+    background-color: hsl(210, 67%, 97%)
+}
 
 .cabecalho_landscape {
     /* display */
