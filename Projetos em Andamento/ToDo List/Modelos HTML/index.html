@@ -8,7 +8,7 @@
 
         <!-- css -->
         <link rel="stylesheet" href="css/reset.css" />
-        <link rel="stylesheet" href="css/smallscreen.css" />
+        <link rel="stylesheet" href="css/style.css" />
 
         <!-- font awesome -->
         <script
@@ -78,7 +78,30 @@
                 </div>
             </div>
 
-            <p>texto</p>
+            <div class="addtask-search-container">
+                <div class="button-addtask-container">
+                    <button class="button-addtask">
+                        <i class="fa-solid fa-circle-plus"></i>
+                        <p>Adicionar Tarefa</p>
+                    </button>
+                </div>
+                
+                <form method="get" class="searchbar">
+                    <input type="text" name="search" id="search" placeholder="Buscar por...">
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
+            
+            <div class="filter">
+                <p>Filtrar por:</p>
+                <select name="filter" id="filter">
+                    <option value="all">Todas</option>
+                    <option value="done">Finalizadas</option>
+                    <option value="unfinished">Não finalizadas</option>
+                </select>
+            </div>
         </main>
 
         <!-- js -->

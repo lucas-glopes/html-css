@@ -30,8 +30,9 @@
 
 body {
     font-family: var(--font);
-    font-weight: 900;
-    /* background-color: lightgrey; */
+    font-weight: 700;
+    background-color: white;
+
 }
 
 /* navbar */
@@ -44,7 +45,7 @@ body {
 
     height: 60px;
 
-    z-index: 1;
+    z-index: 2;
 
     position: relative;
 
@@ -59,6 +60,8 @@ body {
     color: var(--dark-gray);
 
     margin-left: 17px;
+
+    font-weight: 900;
 }
 
 .navbar i {
@@ -72,14 +75,14 @@ body {
 /* navbar menu */
 .navbar-menu {
     background-color: var(--gray-background);
-    padding-top: 15px;
+    padding: 15px 15px 0;
 
     border-bottom: 2.5px solid var(--gray-line);
 
     position: absolute;
     width: 100%;
 
-    z-index: 0;
+    z-index: 1;
 
     transition: all 0.3s ease-out;
 }
@@ -90,7 +93,7 @@ body {
 
     position: relative;
 
-    margin: 0 15px 17px;
+    margin: 0 auto 17px;
     padding: 0 10px;
 
     border-radius: 10px;
@@ -99,6 +102,8 @@ body {
     justify-content: center;
 
     height: 40px;
+
+    max-width: 350px;
 }
 
 .scheme-switch ul {
@@ -113,7 +118,6 @@ body {
     color: white;
 
     font-size: 1em;
-    font-weight: 700;
 
     z-index: 1;
 }
@@ -137,12 +141,11 @@ body {
 /* navbar links */
 .navbar-links-small ul li {
     text-align: center;
-    text-decoration: none;
 
     font-size: 1.1em;
+    /* font-weight: 900; */
 
     padding: 15px;
-    margin: 0 15px;
 
     border-bottom: 2.5px solid var(--gray-line);
 }
@@ -161,13 +164,24 @@ body {
     color: var(--gray-links);
 }
 
+.navbar-links-small ul li a:active {
+    color: var(--blue);
+}
+
+/* main */
+main {
+    background-color: white;
+    
+    padding: 15px 10px;
+}
+
 /* dashboard */
 .dashboard {
     background-color: var(--blue);
 
-    margin: 15px 12px;
-
     border-radius: 10px;
+
+    margin-bottom: 32px;
 
     height: 40px;
 
@@ -186,7 +200,11 @@ body {
     color: white;
 
     font-size: 1em;
-    font-weight: 700;
+}
+
+.dashboard-header p {
+    padding-top: 2.5px;
+    padding-left: 5px;
 }
 
 .dashboard-header button {
@@ -216,21 +234,155 @@ body {
     opacity: 0;
 
     transition: all 0.2s ease-out 0.1s;
+
+    pointer-events: none;
 }
 
 .dashboard-data ul li {
     display: flex;
     justify-content: space-between;
+
+    font-family: var(--font);
+    font-weight: 400;
 }
 
 .dashboard-data ul li:nth-child(2) {
     margin: 40px 0;
 }
 
-.dashboard-data ul li p:first-child {
+.dashboard-data ul li p:last-child {
     font-weight: 700;
 }
 
 .dashboard-data ul {
     padding: 0 10px;
+}
+
+/* container do botão addtask e do buscador */
+.addtask-search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 27px;
+}
+
+/* botão de addtask */
+.button-addtask-container {
+    display: inline-block;
+}
+
+.button-addtask {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: var(--green);
+
+    color: white;
+
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 75%;
+
+    padding: 10px;
+
+    margin-right: 5px;
+}
+
+.button-addtask i {
+    margin-right: 5px;
+}
+
+/* buscador */
+.searchbar {
+    display: flex;
+    justify-content: flex-end;
+
+    width: 60%;
+
+    z-index: 0;
+}
+
+.searchbar input {
+    background-color: var(--light-gray);
+
+    border-width: 2.5px 0 2.5px 2.5px;
+    border-color: var(--medium-gray);
+    border-radius: 10px 0 0 10px;
+    border-style: solid;
+
+    padding: 7px 10px;
+
+    transition: all .3s ease-in-out;
+
+    width: 100%;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.searchbar input::placeholder {
+    color: lightgray;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.searchbar input:focus {
+    outline: none;
+
+    border-color: var(--dark-gray);
+}
+
+.searchbar button {
+    border-width: 2.5px;
+    border-color: var(--medium-gray);
+    border-radius: 0 10px 10px 0;
+    border-style: solid;
+
+    background-color: white;
+
+    transition: all .3s ease-in-out;
+}
+
+.searchbar button i {
+    color: var(--dark-gray);
+    padding: 0 2px;
+}
+
+/* filtro */
+.filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter p {
+    margin-right: 10px;
+}
+
+.filter select {
+    background-color: var(--light-gray);
+
+    border: none;
+    
+    text-align: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+    color: black;
+
+    padding: 7px 0;
+
+    width: 60%;
+}
+
+.filter select option {    
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
