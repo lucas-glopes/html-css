@@ -84,36 +84,36 @@
                 </div>
             </section>
 
-            <section class="addtask-search-container">
-                <div class="button-addtask-container">
-                    <a href="#">
-                        <button class="button-addtask">
-                            <i class="fa-solid fa-circle-plus"></i>
-                            <p>Adicionar Tarefa</p>
+            <section class="options-container-main">
+                <section class="addtask-search-container">
+                    <div class="button-addtask-container">
+                        <a href="#">
+                            <button class="button-addtask">
+                                <i class="fa-solid fa-circle-plus"></i>
+                                <p>Adicionar Tarefa</p>
+                            </button>
+                        </a>
+                    </div>
+                    <form method="get" class="searchbar">
+                        <input
+                            type="text"
+                            name="search"
+                            id="search"
+                            placeholder="Buscar por..."
+                        />
+                        <button type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
-                    </a>
-                </div>
-
-                <form method="get" class="searchbar">
-                    <input
-                        type="text"
-                        name="search"
-                        id="search"
-                        placeholder="Buscar por..."
-                    />
-                    <button type="submit">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </form>
-            </section>
-
-            <section class="filter">
-                <p>Filtrar por:</p>
-                <select name="filter" id="filter">
-                    <option value="all">Todas</option>
-                    <option value="done">Finalizadas</option>
-                    <option value="unfinished">Não finalizadas</option>
-                </select>
+                    </form>
+                </section>
+                <section class="filter">
+                    <p>Filtrar por:</p>
+                    <select name="filter" id="filter">
+                        <option value="all">Todas</option>
+                        <option value="done">Finalizadas</option>
+                        <option value="unfinished">Não finalizadas</option>
+                    </select>
+                </section>
             </section>
 
             <ul class="tasks-container">

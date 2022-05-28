@@ -368,6 +368,30 @@ main {
     margin-bottom: 27px;
 }
 
+/* responsivo */
+@media screen and (min-width: 768px) {
+    /* container do botão addtask e do buscador */
+    .addtask-search-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 65%;
+
+        margin-bottom: 0;
+        margin-right: 15px;
+    }
+
+    /* container da opções da main */
+    .options-container-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-bottom: 60px;
+    }
+}
+
 /* botão de addtask */
 .button-addtask-container {
     display: inline-block;
@@ -375,7 +399,7 @@ main {
 
 .button-addtask {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
     border: none;
@@ -396,6 +420,14 @@ main {
 
 .button-addtask i {
     margin-right: 5px;
+    margin-top: 3px;
+}
+
+/* responsivo */
+@media screen and (min-width: 1024px) {
+    .button-addtask {
+        width: 130%;
+    }
 }
 
 /* buscador */
@@ -455,6 +487,13 @@ main {
     padding: 0 2px;
 }
 
+/* responsivo */
+@media screen and (min-width: 768px) {
+    .searchbar {
+        width: 70%;
+    }
+}
+
 /* filtro */
 .filter {
     display: flex;
@@ -482,7 +521,7 @@ main {
 
     padding: 7px 0;
 
-    width: 65%;
+    width: 60%;
 }
 
 .filter select:focus {
@@ -494,6 +533,22 @@ main {
     font-weight: bold;
 
     /* background-color: black; */
+}
+
+/* responsivo */
+@media screen and (min-width: 768px) {
+    .filter {
+        width: 35%;
+        margin-bottom: 0;
+
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .filter select {
+        width: 70%;
+    }
 }
 
 /* task */
