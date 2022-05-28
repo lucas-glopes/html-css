@@ -171,7 +171,7 @@ body {
 /* main */
 main {
     background-color: white;
-    
+
     padding: 15px 10px;
 }
 
@@ -317,7 +317,7 @@ main {
 
     padding: 7px 10px;
 
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
     width: 100%;
 
@@ -327,7 +327,7 @@ main {
 
 .searchbar input::placeholder {
     color: lightgray;
-    
+
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
@@ -346,7 +346,7 @@ main {
 
     background-color: white;
 
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .searchbar button i {
@@ -371,7 +371,7 @@ main {
     background-color: var(--light-gray);
 
     border: none;
-    
+
     text-align: center;
 
     font-family: Arial, Helvetica, sans-serif;
@@ -384,7 +384,7 @@ main {
     width: 65%;
 }
 
-.filter select option {    
+.filter select option {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
@@ -403,14 +403,14 @@ main {
     padding: 12px 12px 17px;
 
     background-color: var(--light-gray);
-    
+
     border: 2.5px solid var(--medium-gray);
-    
+
     border-width: 2.5px 2.5px 0 2.5px;
     border-color: var(--medium-gray);
     border-style: solid;
     border-radius: 10px 10px 0 0;
-    
+
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -433,7 +433,7 @@ main {
 
     color: var(--medium-gray);
 
-    font-size: .9em;
+    font-size: 0.9em;
 }
 
 .task-main i {
@@ -453,7 +453,6 @@ main {
 .task-buttons button {
     width: 50%;
 
-    
     border: none;
 
     padding: 10px;
@@ -467,7 +466,7 @@ main {
 
 .task-buttons button:first-child {
     background-color: var(--red);
-    
+
     border-bottom-left-radius: 10px;
 }
 
