@@ -48,11 +48,11 @@ document
             document.querySelector(".dashboard").style.height = "240px";
 
             document.querySelector(".dashboard-data").style.opacity = "1";
-            
-            document.querySelector(".dashboard-data").style.pointerEvents = "all";
+
+            document.querySelector(".dashboard-data").style.pointerEvents =
+                "all";
 
             dashboardOn = true;
-
         } else if (dashboardOn == true) {
             document.querySelector(".dashboard-header button").innerHTML =
                 "Mostrar";
@@ -66,23 +66,38 @@ document
             document.querySelector(".dashboard").style.height = "40px";
 
             document.querySelector(".dashboard-data").style.opacity = "0";
-            
-            document.querySelector(".dashboard-data").style.pointerEvents = "none";
 
+            document.querySelector(".dashboard-data").style.pointerEvents =
+                "none";
 
             dashboardOn = false;
         }
     });
 
 // transição para quando o buscador é focado
-document.querySelector('.searchbar input')
-    .addEventListener('focus', () => {
-        document.querySelector('.searchbar button')
-            .style.borderColor = 'var(--dark-gray)'
-    })
+document.querySelector(".searchbar input").addEventListener("focus", () => {
+    document.querySelector(".searchbar button").style.borderColor =
+        "var(--dark-gray)";
+});
 
-document.querySelector('.searchbar input')
-.addEventListener('blur', () => {
-    document.querySelector('.searchbar button')
-        .style.borderColor = 'var(--medium-gray)'
-})
+document.querySelector(".searchbar input").addEventListener("blur", () => {
+    document.querySelector(".searchbar button").style.borderColor =
+        "var(--medium-gray)";
+});
+
+// animação do switch de modo claro/escuro
+// 1. mudar para modo escuro
+document
+    .querySelector(".scheme-switch ul li:last-child")
+    .addEventListener("click", () => {
+        document.querySelector(".switch-select").style.transform =
+            "translateX(45%)";
+    });
+
+// 2. mudar para modo claro
+document
+    .querySelector(".scheme-switch ul li:first-child")
+    .addEventListener("click", () => {
+        document.querySelector(".switch-select").style.transform =
+            "translateX(-45%)";
+    });
