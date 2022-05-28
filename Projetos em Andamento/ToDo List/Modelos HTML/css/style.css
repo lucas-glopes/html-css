@@ -3,7 +3,7 @@
 
 /* geral */
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font), Arial, Helvetica, sans-serif;
 }
 
 :root {
@@ -32,7 +32,6 @@ body {
     font-family: var(--font);
     font-weight: 700;
     background-color: white;
-
 }
 
 /* navbar */
@@ -48,6 +47,7 @@ body {
     z-index: 2;
 
     position: relative;
+    top: 0;
 
     width: 100%;
 
@@ -359,6 +359,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    margin-bottom: 40px;
 }
 
 .filter p {
@@ -379,10 +381,98 @@ main {
 
     padding: 7px 0;
 
-    width: 60%;
+    width: 65%;
 }
 
 .filter select option {    
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+}
+
+/* task */
+.task {
+    margin-top: 22px;
+}
+
+/* tasks main */
+.task-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 12px 17px;
+
+    background-color: var(--light-gray);
+    
+    border: 2.5px solid var(--medium-gray);
+    
+    border-width: 2.5px 2.5px 0 2.5px;
+    border-color: var(--medium-gray);
+    border-style: solid;
+    border-radius: 10px 10px 0 0;
+    
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* task data */
+.task-data h2 {
+    color: var(--dark-gray);
+
+    font-weight: 900;
+    font-size: 1.7em;
+
+    margin-bottom: 10px;
+}
+
+.task-data p {
+    /* cortar texto */
+    max-width: 255px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    color: var(--medium-gray);
+
+    font-size: .9em;
+}
+
+.task-main i {
+    color: var(--medium-gray);
+
+    font-size: 3em;
+}
+
+.task-buttons {
+    width: 100%;
+
+    display: flex;
+
+    color: white;
+}
+
+.task-buttons button {
+    width: 50%;
+
+    
+    border: none;
+
+    padding: 10px;
+
+    color: white;
+
+    font-weight: 700;
+
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.task-buttons button:first-child {
+    background-color: var(--red);
+    
+    border-bottom-left-radius: 10px;
+}
+
+.task-buttons button:last-child {
+    background-color: var(--blue);
+
+    border-bottom-right-radius: 10px;
 }
