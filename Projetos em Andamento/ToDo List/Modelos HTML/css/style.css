@@ -384,9 +384,15 @@ main {
     width: 65%;
 }
 
+.filter select:focus {
+    outline: none;
+}
+
 .filter select option {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+
+    /* background-color: black; */
 }
 
 /* task */
@@ -414,7 +420,27 @@ main {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
+.task-main i {
+    font-size: 3em;
+}
+
+.task-main i.fa-regular {
+    color: var(--medium-gray);
+}
+
+.task-main i.fa-solid {
+    color: var(--green);
+}
+
 /* task data */
+.task-data {
+    transition: all .1s ease-in-out;
+}
+
+.task-data.checked {
+    opacity: .5;
+}
+
 .task-data h2 {
     color: var(--dark-gray);
 
@@ -436,12 +462,7 @@ main {
     font-size: 0.9em;
 }
 
-.task-main i {
-    color: var(--medium-gray);
-
-    font-size: 3em;
-}
-
+/* task buttons */
 .task-buttons {
     width: 100%;
 
