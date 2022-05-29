@@ -31,7 +31,7 @@
 body {
     font-family: var(--font);
     font-weight: 700;
-    
+
     background-color: white;
 }
 
@@ -47,14 +47,14 @@ body button {
 
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 /* responsivo */
 @media screen and (min-width: 1024px) {
     body button:hover {
         transform: scale(1.05);
-    
+
         box-shadow: 0 0 0px rgba(0, 0, 0, 0.2);
     }
 }
@@ -85,7 +85,7 @@ body button {
 
     opacity: 0;
 
-    transition: all .1s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 
 /* alert */
@@ -100,13 +100,13 @@ body button {
 
     opacity: 0;
 
-    transform: scale(.9);
+    transform: scale(0.9);
 
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .alert p {
-    font-size: .9em;
+    font-size: 0.9em;
 
     padding: 2px;
 }
@@ -125,7 +125,7 @@ body button {
     color: white;
 
     font-weight: 700;
-    font-size: .9em;
+    font-size: 0.9em;
 
     border-radius: 5px;
 }
@@ -755,7 +755,6 @@ main {
     font-weight: 700;
 
     border-radius: 0;
-
 }
 
 .task-buttons button:first-child {
@@ -787,14 +786,14 @@ main {
 
     .task-buttons-wide button {
         color: white;
-        
+
         font-weight: 700;
 
         padding: 10px 27px;
 
         margin: 0 5px;
 
-        font-size: .8em;
+        font-size: 0.8em;
     }
 
     .task-buttons-wide button i {
