@@ -74,7 +74,7 @@ document
         }
     });
 
-// transição para quando o buscador é focado
+// transição da borda para quando o buscador é focado
 document.querySelector(".searchbar input").addEventListener("focus", () => {
     document.querySelector(".searchbar button").style.borderColor =
         "var(--dark-gray)";
