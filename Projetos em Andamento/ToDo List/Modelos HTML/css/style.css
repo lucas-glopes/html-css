@@ -40,6 +40,19 @@ body a {
 
 body button {
     cursor: pointer;
+
+    border: none;
+    border-radius: 10px;
+
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+    transition: all .2s ease-in-out;
+}
+
+body button:hover {
+    transform: scale(1.05);
+
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.2);
 }
 
 /* navbar */
@@ -301,8 +314,6 @@ main {
 }
 
 .dashboard-header button {
-    border: none;
-
     background-color: #5d9cff;
 
     color: white;
@@ -316,8 +327,6 @@ main {
     width: 110px;
 
     border-radius: 5px;
-
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 /* responsivo */
@@ -402,9 +411,6 @@ main {
     justify-content: center;
     align-items: center;
 
-    border: none;
-    border-radius: 10px;
-
     background-color: var(--green);
 
     color: white;
@@ -480,6 +486,8 @@ main {
     background-color: white;
 
     transition: all 0.3s ease-in-out;
+
+    box-shadow: none;
 }
 
 .searchbar button i {
@@ -576,16 +584,26 @@ main {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-.task-main i {
+.task-main > i {
     font-size: 3em;
 }
 
-.task-main i.fa-regular {
+.task-main > i.fa-regular {
     color: var(--medium-gray);
 }
 
-.task-main i.fa-solid {
+.task-main > i.fa-solid {
     color: var(--green);
+}
+
+/* responsivo */
+@media screen and (min-width: 768px) {
+    .task-main {
+        border: 2.5px solid var(--medium-gray);
+        border-radius: 10px;
+
+        padding: 15px 17px 17px;
+    }
 }
 
 /* task data */
@@ -618,6 +636,19 @@ main {
     font-size: 0.9em;
 }
 
+/* responsivo */
+@media screen and (min-width: 768px) {
+    .task-data p {
+        max-width: 355px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .task-data p {
+        max-width: 555px;
+    }
+}
+
 /* task buttons */
 .task-buttons {
     width: 100%;
@@ -630,15 +661,14 @@ main {
 .task-buttons button {
     width: 50%;
 
-    border: none;
-
     padding: 10px;
 
     color: white;
 
     font-weight: 700;
 
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+
 }
 
 .task-buttons button:first-child {
@@ -651,6 +681,46 @@ main {
     background-color: var(--blue);
 
     border-bottom-right-radius: 10px;
+}
+
+/* responsivo */
+.task-buttons-wide {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .task-buttons {
+        display: none;
+    }
+
+    /* task buttons wide */
+    .task-buttons-wide {
+        display: block;
+    }
+
+    .task-buttons-wide button {
+        color: white;
+        
+        font-weight: 700;
+
+        padding: 10px 27px;
+
+        margin: 0 5px;
+
+        font-size: .8em;
+    }
+
+    .task-buttons-wide button i {
+        margin-right: 3px;
+    }
+
+    .task-buttons-wide button:first-child {
+        background-color: var(--red);
+    }
+
+    .task-buttons-wide button:last-child {
+        background-color: var(--blue);
+    }
 }
 
 /* paginator */
