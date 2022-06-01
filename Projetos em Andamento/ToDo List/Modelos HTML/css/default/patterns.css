@@ -55,7 +55,7 @@ body button {
 /* responsivo */
 @media screen and (min-width: 1024px) {
     body button:hover {
-        transform: scale(1.05);
+        transform: scale(1.02);
 
         box-shadow: 0 0 0px rgba(0, 0, 0, 0.2);
     }

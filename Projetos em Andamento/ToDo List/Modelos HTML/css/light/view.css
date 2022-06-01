@@ -1,0 +1,117 @@
+/* main */
+main {
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+/* header */
+header h2 {
+    font-size: 2em;
+    font-weight: 900;
+
+    color: var(--dark-gray);
+}
+
+header h3 {
+    font-size: .9em;
+    font-weight: 700;
+
+    color: var(--medium-gray);
+
+    padding-top: 25px;
+
+    margin-bottom: 5px;
+}
+
+/* paragrafo de descrição */
+.task-description {
+    margin: 40px 0 20px;
+
+    color: black;
+
+    line-height: 22px;
+}
+
+/* paragrafo de status */
+.task-status {
+    color: var(--medium-gray);
+}
+
+.unfinished {
+    color: var(--red);
+
+    font-weight: 900;
+}
+
+.finished {
+    color: var(--green);
+
+    font-weight: 900;
+}
+
+/* container dos botoes */
+.task-buttons {
+    display: block;
+
+    margin-top: 60px;
+}
+
+/* botoes de edit task */
+.edit-task-buttons {
+    background-color: var(--light-gray);
+
+    border-radius: 10px;
+    padding: 7px;
+
+    margin-bottom: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit-task-buttons button {
+    padding: 10px;
+    border-radius: 5px;
+
+    font-weight: 700;
+    color: white;
+}
+
+.edit-task-buttons button:nth-child(1) {
+    background-color: var(--red);
+
+    width: 15%;
+}
+
+.edit-task-buttons button:nth-child(2) {
+    background-color: var(--blue);
+
+    width: 15%;
+}
+
+.edit-task-buttons button:nth-child(3) {
+    background-color: var(--green);
+
+    width: 60%;
+}
+
+/* botao de voltar */
+.task-buttons > button {
+    background-color: var(--dark-gray);
+
+    width: 100%;
+
+    padding: 10px;
+
+    font-size: .9;
+    font-weight: 700;
+}
+
+.task-buttons > button a {
+    color: white;
+}
+
+.task-buttons > button a i {
+    margin-right: 3px;
+}

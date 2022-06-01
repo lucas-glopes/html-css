@@ -7,13 +7,17 @@ main {
     max-width: 1024px;
 
     margin: auto;
-
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
 }
 
 /* responsivo */
 @media screen and (min-width: 768px) {
     main {
         padding: 15px 20px 50px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
     }
 }
